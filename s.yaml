@@ -7,9 +7,9 @@ services:
     props:
       region: cn-hangzhou
       service:
-        name: serverless-devs-application
+        name: swjc-server-app
       function:
-        name: youxueserver-enni
+        name: swjc-server
         description: Initialize
         runtime: custom.debian10
         environmentVariables:
