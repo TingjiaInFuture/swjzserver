@@ -47,7 +47,7 @@ fastify.post("/register", async (request, reply) => {
     const userId = await db.addUser(request.body.username, request.body.password);
     if (userId) {
       data.success = true;
-      data.userId = userId;  
+      data.userId = userId;  //如果不返回userId但前端按userId判断则会注册成功却提示失败
     } else {
       data.success = false;
     }
